@@ -67,9 +67,9 @@ function AuthPage(): JSX.Element {
   return (
     <div className="App">
       <App
-        userDataSDK={sdkData}
         accessToken={userData?.accessToken || ""}
         cpf={userData.cpf}
+        userDataSDK={sdkData}
       />
     </div>
   );

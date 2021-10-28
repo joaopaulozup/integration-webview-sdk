@@ -12,7 +12,18 @@ function App({ accessToken, cpf, userDataSDK }: AppProps): JSX.Element {
       Edit <code>src/App.tsx</code> and save to reload.
       {accessToken}
       {cpf}
-      {userDataSDK}
+      {userDataSDK.appId}
+      {userDataSDK.salty}
+      {userDataSDK.fullName}
+      {userDataSDK.cpf}
+      {userDataSDK.email}
+      {userDataSDK.os}
+      {userDataSDK.customerAcessibility}
+      {userDataSDK.token}
+      {userDataSDK.authentication}
+      {userDataSDK.customerType}
+      {userDataSDK.error}
+      {userDataSDK.appName}
     </div>
   );
 }

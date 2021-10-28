@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { userSDKDataProps } from "./context/AuthContext";
 
-function App() {
+type AppProps = {
+  accessToken: string;
+  cpf: string;
+  userDataSDK: userSDKDataProps;
+};
+
+function App({ accessToken, cpf, userDataSDK }: AppProps): JSX.Element {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Edit <code>src/App.tsx</code> and save to reload.
+      {accessToken}
+      {cpf}
+      {userDataSDK}
     </div>
   );
 }

@@ -1,0 +1,45 @@
+const qa = {
+  TURN_ADOBE_ANALYTICS_ON: true,
+  ADOBE_ANALYTICS_URL: "https://",
+  GATEWAY_HOST: "https://cartoes-qa.staging.gateway.zup.me",
+  GATEWAY_HOST_OLD: "https://itau.staging.gateway.zup.me",
+  GATEWAY_APP_KEY: "446877d0a80f013815de723b48531df7",
+  GATEWAY_ORCHESTRATOR_APP_KEY: "c9762c603c4c01375637000d3ac06d76",
+  GATEWAY_ALLIED_APP_KEY: "8b01f1401b7401386a1e000d3ac06d76",
+  GATEWAY_CEP_APP_KEY: "4a035640243701386ac5000d3ac06d76",
+  CREDENTIALS_APP_KEY: "d87b0f602ee201386b5b000d3ac06d76",
+  MONITORING_APP_KEY: "9cbd85c0c37d0137625b000d3ac06d76",
+  DEBUG_MODE: true,
+  S3_BUCKET: "https://itau-cartoes-eden-imgs.continuousplatform.com",
+  GRAPHQL_HOST: "",
+  ELASTIC_APM_SERVICE: "Eden Front End",
+  ELASTIC_APM_HOST: "https://itau-stg-elasticsearch01.azure.zup.com.br:8200",
+  CLEAR_SALE_KEY: "n9aziebwpp92uv3eaq7z",
+  FIREBASE_CONFIG: {
+    apiKey: "AIzaSyBr0bh88ALMSNe7abuSFpgOUp_kx1IC32s",
+    authDomain: "front-eden-6cb0d.firebaseapp.com",
+    databaseURL: "https://front-eden-6cb0d.firebaseio.com",
+    projectId: "front-eden-6cb0d",
+    storageBucket: "front-eden-6cb0d.appspot.com",
+    messagingSenderId: "783651544099",
+    appId: "1:783651544099:web:607f7a195d6e2b0a69a596",
+    measurementId: "G-33D39P48BB"
+  },
+  ANALYTICS_ITAUCARD: "GTM-PTRVD26",
+  ANALYTICS_PERSONALITE: "GTM-PTRVD26",
+  ANALYTICS_SUPERAPP: "GTM-PTRVD26",
+  ANALYTICS_CREDICARD: "GTM-MZKC4L9",
+  SENTRY: false,
+  SENTRY_URL:
+    "https://7cd84d9950894385a46dc3f1451fc2b8@zup-itau-monitoring-dev.continuousplatform.com/2",
+  ENVIRONMENT: "qa",
+  USE_SDK: false,
+  UNAVAILABLE_STOCK: false,
+  FETCH_INTERVAL: 300000,
+  MPCOM_ITOKEN_BASIC_AUTH: "Basic aXRhdToxMjM0NTY3OA==",
+  MPCOM_ITOKEN_APPKEY: "0e52e730f34d013767ea000d3ac06d76",
+  APP_UPDATE: false,
+  FEATURE_TOGGLE_UPGRADE: false
+};
+
+export default qa;

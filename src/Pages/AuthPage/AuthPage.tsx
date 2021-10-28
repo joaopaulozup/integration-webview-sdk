@@ -46,7 +46,6 @@ function AuthPage(): JSX.Element {
 
       const user = await Auth(userSDKData);
       setSDKData(userSDKData);
-      debugger;
       setUserData({
         accessToken: user.accessToken,
         cpf: userSDKData.cpf,

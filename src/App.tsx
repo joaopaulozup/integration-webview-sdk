@@ -10,20 +10,20 @@ function App({ accessToken, cpf, userDataSDK }: AppProps): JSX.Element {
   return (
     <div className="App">
       Edit <code>src/App.tsx</code> and save to reload.
-      {accessToken}
-      {cpf}
-      {userDataSDK.appId}
-      {userDataSDK.salty}
-      {userDataSDK.fullName}
-      {userDataSDK.cpf}
-      {userDataSDK.email}
-      {userDataSDK.os}
-      {userDataSDK.customerAcessibility}
-      {userDataSDK.token}
-      {userDataSDK.authentication}
-      {userDataSDK.customerType}
-      {userDataSDK.error}
-      {userDataSDK.appName}
+      <p>access token - {accessToken}</p>
+      <p>cpf - {cpf}</p>
+      <p>appID - {userDataSDK.appId}</p>
+      <p>salty - {userDataSDK.salty}</p>
+      <p>fullName - {userDataSDK.fullName}</p>
+      <p>cpf - {userDataSDK.cpf}</p>
+      <p>email - {userDataSDK.email}</p>
+      <p>os - {userDataSDK.os}</p>
+      <p>customerAcessibility - {userDataSDK.customerAcessibility}</p>
+      <p>token - {userDataSDK.token}</p>
+      <p>authentication - {userDataSDK.authentication}</p>
+      <p>customerType - {userDataSDK.customerType}</p>
+      <p>error - {userDataSDK.error}</p>
+      <p>appName - {userDataSDK.appName}</p>
     </div>
   );
 }

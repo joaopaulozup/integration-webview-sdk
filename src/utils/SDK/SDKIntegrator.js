@@ -4,11 +4,12 @@ import * as SDKMockedData from "./SDKMockedData";
 
 // Callback function name created in the index.html
 const CALLBACK_FUNC_NAME = "execCallBackFunction";
-
 const params = new URLSearchParams(window.location?.href.split("?")[1]);
+
 const sdkFlag = !process.env.REACT_APP_USE_SDK
   ? !process.env.REACT_APP_USE_SDK
   : !!(params.get("sdk") && params.get("sdk").toLowerCase() === "true");
+
 const deviceAndroid = params.get("android") && params.get("android") === "true";
 
 if (deviceAndroid) {
@@ -177,12 +178,12 @@ const requestNativeFeature = (data, callback) => {
   );
 };
 
-export const checkSDKFlag = () => {
-  const sdkFlag = process.env.REACT_APP_USE_SDK
-    ? process.env.REACT_APP_USE_SDK
-    : !!(params.get("sdk") && params.get("sdk").toLowerCase() === "true");
-  return sdkFlag;
-};
+// export const checkSDKFlag = () => {
+//   const sdkFlag = process.env.REACT_APP_USE_SDK
+//     ? process.env.REACT_APP_USE_SDK
+//     : !!(params.get("sdk") && params.get("sdk").toLowerCase() === "true");
+//   return sdkFlag;
+// };
 
 export const getSDKItem = async (key) => {
   let value = await nativeHelper.getMemoryItem(key);
